@@ -1,0 +1,12 @@
+{
+  "name": "FiftyFifty",
+  "main": "index.html",
+  "window": {
+    "title": "Fifty Fifty",
+    "toolbar": false,
+    "frame": true,
+    "show_in_taskbar": false,
+    "show" : false
+  },
+  "chromium-args": "--disable-web-security"
+}
