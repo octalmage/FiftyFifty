@@ -60,7 +60,7 @@ gui.App.registerGlobalHotKey(rightshortcut);
 gui.App.registerGlobalHotKey(fullshortcut);
 gui.App.registerGlobalHotKey(smallshortcut);
 
-
+/* jshint multistr: true */
 var right = 'tell application "Finder" \n\
 	set _b to bounds of window of desktop \n\
 	set _width to item 3 of _b \n\
