@@ -141,18 +141,3 @@ function move(pos)
 		console.log(error);
 	});
 }
-
-
-$(document).on("ready",function()
-{
-
-	//Temporary access to devtools using CMD+ALT+I. 
-	$(document).on("keypress", function(e) 
-	{
-  		if (e.altKey && e.metaKey && e.keyCode==94)
-  		{
-  			win.showDevTools();
-  		}
-	});
-
-});
