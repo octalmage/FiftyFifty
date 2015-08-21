@@ -61,7 +61,7 @@ gui.App.registerGlobalHotKey(fullshortcut);
 gui.App.registerGlobalHotKey(smallshortcut);
 
 
-right='tell application "Finder" \n\
+var right = 'tell application "Finder" \n\
 	set _b to bounds of window of desktop \n\
 	set _width to item 3 of _b \n\
 	set _height to item 4 of _b \n\
@@ -75,7 +75,7 @@ tell application "System Events" to tell (first application process whose frontm
 	end tell \n\
 end tell\n'
 
-left='tell application "Finder" \n\
+var left = 'tell application "Finder" \n\
 	set _b to bounds of window of desktop \n\
 	set _width to item 3 of _b \n\
 	set _height to item 4 of _b \n\
@@ -89,7 +89,7 @@ tell application "System Events" to tell (first application process whose frontm
 	end tell \n\
 end tell\n'
 
-full='tell application "Finder" \n\
+var full = 'tell application "Finder" \n\
 	set _b to bounds of window of desktop \n\
 	set _width to item 3 of _b \n\
 	set _height to item 4 of _b \n\
@@ -103,7 +103,7 @@ tell application "System Events" to tell (first application process whose frontm
 	end tell \n\
 end tell\n'
 
-small='tell application "Finder" \n\
+var small = 'tell application "Finder" \n\
 	set _b to bounds of window of desktop \n\
 	set _width to item 3 of _b \n\
 	set _height to item 4 of _b \n\
