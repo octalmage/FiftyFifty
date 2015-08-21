@@ -3,7 +3,7 @@ var win = gui.Window.get();
 var exec = require('child_process').exec;
 
 
-var tray = new gui.Tray({ title: 'Fifty Fifty', icon: 'img/icon.png' });
+var tray = new gui.Tray({ title: 'FiftyFifty', icon: 'img/icon.png' });
 
 var menu = new gui.Menu();
 menu.append(new gui.MenuItem({ label: 'Quit' , click: function()
