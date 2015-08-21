@@ -73,7 +73,7 @@ tell application "System Events" to tell (first application process whose frontm
 		set size to {_width / 2, _height} \n\
 		set position to {_width / 2, 20} \n\
 	end tell \n\
-end tell\n'
+end tell\n';
 
 var left = 'tell application "Finder" \n\
 	set _b to bounds of window of desktop \n\
@@ -87,7 +87,7 @@ tell application "System Events" to tell (first application process whose frontm
 		set size to {_width / 2, _height} \n\
 		set position to {0, 20} \n\
 	end tell \n\
-end tell\n'
+end tell\n';
 
 var full = 'tell application "Finder" \n\
 	set _b to bounds of window of desktop \n\
@@ -101,7 +101,7 @@ tell application "System Events" to tell (first application process whose frontm
 		set size to {_width, _height} \n\
 		set position to {0, 20} \n\
 	end tell \n\
-end tell\n'
+end tell\n';
 
 var small = 'tell application "Finder" \n\
 	set _b to bounds of window of desktop \n\
@@ -115,7 +115,7 @@ tell application "System Events" to tell (first application process whose frontm
 		set size to {_width/2, _height/2} \n\
 		set position to {(_width/2)-((_width/2)/2), (_height/2)-((_height/2)/2)} \n\
 	end tell \n\
-end tell\n'
+end tell\n';
 
 function move(pos)
 {
