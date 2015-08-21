@@ -117,22 +117,6 @@ tell application "System Events" to tell (first application process whose frontm
 	end tell \n\
 end tell\n'
 
-applescript='tell application "Finder" \n\
-	set _b to bounds of window of desktop \n\
-	set _width to item 3 of _b \n\
-	set _height to item 4 of _b \n\
-end tell \n\
-\n \
- \n\
-tell application "System Events" to tell (first application process whose frontmost is true) \n\
-	tell window 1 \n\
-		set size to {{{w}}, {{h}}} \n\
-		set position to {{{x}}, {{y}}} \n\
-	end tell \n\
-end tell\n'
-
-
-
 function move(pos)
 {
 	script = "/usr/bin/osascript -e '" + window[pos] + window[pos] + "'";
