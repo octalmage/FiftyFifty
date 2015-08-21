@@ -122,6 +122,7 @@ function move(pos)
 	script = "/usr/bin/osascript -e '" + window[pos] + window[pos] + "'";
 	exec(script, function(error, stdout, stderr)
 	{ 
-		console.log(error);
+		if (error)
+			console.log(error);
 	});
 }
